@@ -204,20 +204,20 @@ parser = argparse.ArgumentParser(description="Motion Alert - send MMS alerts "
                                              "from Motion events.",
                                  epilog="Powered by Twilio!")
 
-parser.add_argument("-S", "--account_sid", default='ACd2735ad3d932ba03915d33da219a969f', required=False,
+parser.add_argument("-S", "--account_sid", default='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', required=False,
                     help="Use a specific Twilio Account Sid.")
-parser.add_argument("-K", "--auth_token", default='4edbc4f1b91c28075f5a104d7bd57de7', required=False,
+parser.add_argument("-K", "--auth_token", default='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', required=False,
                     help="Use a specific Twilio Auth Token.")
-parser.add_argument("-#", "--twilio_number", default='+12017333298', required=False,
+parser.add_argument("-#", "--twilio_number", default='+XXXXXXXXXXXX', required=False,
                     help="Use a specific Twilio phone number "
                          "(e.g. +15556667777).")
-parser.add_argument("-s", "--aws_access_key_id", default='AKIAI3QMQLDCEB26ZWWQ', required=False,
+parser.add_argument("-s", "--aws_access_key_id", default='XXXXXXXXXXXXXXX', required=False,
                     help="Use a specific Amazon Web Services Access Key Id.")
-parser.add_argument("-k", "--aws_secret_key", default='csqVOjVZbCocpmNWJHKg8Lf7WskqQVW1XFjuRn1B', required=False,
+parser.add_argument("-k", "--aws_secret_key", default='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', required=False,
                     help="Use a specific Amazon Web Services Secret Key.")
 parser.add_argument("-b", "--s3_bucket", default='fallbot', required=False,
                     help="Use a specific Amazon Web Services S3 Bucket.")
-parser.add_argument("-t", "--receiving_number", default='+447828883886', required=False,
+parser.add_argument("-t", "--receiving_number", default='+XXXXXXXXXXXX', required=False,
                     help="Number to receive the alerts.")
 parser.add_argument("-T", "--timestamp", default=datetime.datetime.now(), required=False,
                     help="Timestamp of event passed from Motion.")
