@@ -1,0 +1,26 @@
+{
+	// path to OpenCV's face detector haar cascade file
+	"cascade_path": "haarcascade_frontalface_default.xml",
+
+	// path to dlib's facial landmark predictor
+	"shape_predictor_path": "shape_predictor_68_face_landmarks.dat",
+
+	// two boolean variables, one used to indicate if frames must be
+	// displayed, and second used to indicate if TrafficHat should be
+	// used
+	"display": true,
+
+	// two constants, one for the eye aspect ratio to indicate
+	// blink and then a second constant for the number of consecutive
+	// frames the eye must be below the threshold for to set off the
+	// alarm
+	"EYE_AR_THRESH": 0.3,
+	"EYE_AR_CONSEC_FRAMES": 8
+
+	// variables to store your twilio account credentials
+	//"twilio_sid": "ACd2735ad3d932ba03915d33da219a969f",
+	//"twilio_auth": "4edbc4f1b91c28075f5a104d7bd57de7",
+	//"twilio_to": "+447904070968",
+	//"twilio_from": "+12017333298"
+
+}
